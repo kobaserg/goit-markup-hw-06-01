@@ -448,7 +448,6 @@ h3 {
 
 
 .input-block {
-    /* display: flex; */
     height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
@@ -491,14 +490,11 @@ input[type="checkbox"] {
     background-color: #212121;
 }
 
-/* .checkbox-modal {
-    color: #212121;
-} */
 
 .btn-modal {
-    position: absolute;
-    bottom: 40px;
-    transform: translateX(-50%);
+    padding: 0;
+   margin-top: 30px; 
+   
     width: 200px;
     height: 50px;
     background-color: var(--accent-color);
@@ -941,6 +937,55 @@ input[type="checkbox"] {
 
     fill: var(--our-team-card-cl);
 
+}
+
+.email-input {
+    margin-left: 93px;
+    width: 570px;
+    height: 86px;
+}
+
+.input-text {
+    display: flex;
+}
+
+.email-form {
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: inherit;
+
+    font-size: 16px;
+    line-height: 1.25;
+    
+    letter-spacing: 0.03em;
+    
+    color: rgba(255, 255, 255, 0.6);
+
+    padding-left: 16px;
+
+    margin-right: 12px;
+}
+
+.btn-email {
+    width: 200px;
+    height: 50px;
+    background-color: var(--accent-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    
+    
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    
+    color: #FFFFFF;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
 }
 
 
