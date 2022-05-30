@@ -413,7 +413,7 @@ h3 {
      
 }
 
-.close-icon:hover {
+.close-position:hover .close-icon {
     fill: var(--accent-color);
 }
 
