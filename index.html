@@ -67,6 +67,8 @@
 
         <button class="hero-button" type="button" data-modal-open>Заказать услугу</button>
 
+        <!-- Модальное окно заказть услугу -->
+
         <div class="backdrop is-hidden" data-modal>
           <div class="modal">
             <button class="close-position" data-modal-close>
@@ -115,11 +117,18 @@
                 
               </div>
 
-              <input class="checkbox-modal" type="checkbox" name="mailing" id="mailing" />
-              <label class="mailing" for="mailing"
-                >Соглашаюсь с рассылкой и принимаю
+              
+              <label class="mailing">
+                <input class="checkbox-modal visually-hidden" type="checkbox" name="mailing" />
+                <span class="custom-checkbox">
+                  <svg class="custom-checkbox-icon">
+                    <use href="./images/Sprite.svg#icon-vector"></use>
+                  </svg>
+                </span>
+                Соглашаюсь с рассылкой и принимаю
                 <a class="mailing-terms" href="">Условия договора</a>
               </label>
+
               <button class="btn-modal" type="submit">Отправить</button>
             </form>
           </div>
@@ -486,13 +495,13 @@
         <div class="email-input">
           <h3 class="join-title">Подпишитесь на рассылку</h3>
 
-          <form class="input-text">
+          <form class="input-text-footer">
             <label>
               <input class="email-form" type="email" placeholder="E-mail" />
             </label>
 
             <button class="btn-email" type="submit">Подписаться</button>
-            
+
           </form>
         </div>
       </div>

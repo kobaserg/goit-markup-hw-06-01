@@ -469,6 +469,8 @@ h3 {
     border-radius: 4px;
     margin-top: 4px;
     padding-left: 42px;
+
+    outline: transparent;
     
 }
 
@@ -484,12 +486,11 @@ h3 {
     width: 18px;
     height: 18px;
 
-    /* fill: var(--accent-color); */
 }
 
-.input-block:hover .icon-modal {
+.input-block:hover + .icon-modal {
 
-    fill: currentColor;
+    fill: var(--accent-color);
 }
 
 
@@ -507,6 +508,10 @@ height: 120px;
     
 }
 .mailing {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
     text-align: left;
     font-size: 14px;
     line-height: 1.73;
@@ -515,15 +520,51 @@ height: 120px;
     color: #757575;
 }
 
-.mailing-terms {
-    color: var(--accent-color);
-}
+/* Кастомный чекбокс */
 
-input[type="checkbox"] {
+.custom-checkbox {
+    
     width: 16px;
     height: 15px;
-    background-color: #212121;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    outline: 2px solid var(--header-cl);
+    outline-offset: -2px;
+    
+    border-radius: 2px;
+
+    margin-right: 7px;
+
+    transition: background-color 250ms ease-in;
+    
 }
+.custom-checkbox-icon {
+    opacity: 0;
+    fill: var(--our-team-card-cl);
+    transition: opacity 250ms ease-in;
+    width: 11px;
+    height: 8px;
+    
+}
+
+.checkbox-modal:checked + .custom-checkbox .custom-checkbox-icon {
+    opacity: 1;
+    fill: var(--portfolio-card-cl);
+
+}
+
+.checkbox-modal:checked + .custom-checkbox {
+    background-color: var(--accent-color);
+    outline: none;
+}
+
+.mailing-terms {
+    color: var(--accent-color);
+    margin-left: 4px;
+}
+
 
 
 .btn-modal {
@@ -981,9 +1022,9 @@ input[type="checkbox"] {
     height: 86px;
 }
 
-.input-text {
+.input-text-footer {
+
     display: flex;
-    flex-direction: row;
 }
 
 .email-form {
@@ -1020,6 +1061,8 @@ input[type="checkbox"] {
     letter-spacing: 0.06em;
     
     color: #FFFFFF;
+
+    border: none;
 
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
