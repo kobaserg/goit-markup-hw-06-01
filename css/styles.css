@@ -475,7 +475,7 @@ h3 {
 }
 
 
-.input-block:hover {
+.input-block:focus {
     border: 1px solid var(--accent-color);
 }
 
@@ -488,7 +488,7 @@ h3 {
 
 }
 
-.input-block:hover + .icon-modal {
+.input-block:focus + .icon-modal {
 
     fill: var(--accent-color);
 }
