@@ -77,32 +77,51 @@
             <p class="text-modal">Оставьте свои данные, мы вам перезвоним</p>
 
             <form>
-              <div class="modal-block" role="group">
-                <label class="input-text" for="person">Имя</label>
-                <input class="input-block" type="text" name="input-modal" id="person"/>
+              <div class="form-block" role="group">
+                <label class="input-text form-unit">
+                  Имя
+                  <input class="input-block" type="text" name="input-modal" />
+                  <svg class="icon-modal">
+                    <use  href="./images/Sprite.svg#icon-person"></use>
+                  </svg>
+                </label>
 
-                <label class="input-text" for="tel">Телефон</label>
-                <input class="input-block" type="tel" name="input-modal" id="tel"/>
+                <label class="input-text form-unit" for="tel">
+                  Телефон
+                  <input class="input-block" type="tel" name="input-modal" id="tel" />
+                  <svg class="icon-modal">
+                    <use  href="./images/Sprite.svg#icon-phone"></use>
+                  </svg>
+                </label>
 
-                <label class="input-text" for="email">Почта</label>
-                <input class="input-block" type="email" name="input-modal" id="email"/>
+                <label class="input-text form-unit" for="email">
+                  Почта
+                  <input class="input-block" type="email" name="input-modal" id="email" />
+                  <svg class="icon-modal">
+                    <use  href="./images/Sprite.svg#icon-email"></use>
+                  </svg>
+                </label>
+                
 
-                <label class="input-text" for="comment">Комментарий</label>
+                <label class="input-text" for="comment">
+                  Комментарий
                 <textarea
                   class="input-block comment"
                   name="input-modal"
                   id="comment"
-                  placeholder="Введите текст"></textarea>
+                  placeholder="Введите текст"
+                ></textarea>
+                </label>
+                
               </div>
 
-              <input class="checkbox-modal" type="checkbox" name="mailing" id="mailing"/>
+              <input class="checkbox-modal" type="checkbox" name="mailing" id="mailing" />
               <label class="mailing" for="mailing"
                 >Соглашаюсь с рассылкой и принимаю
                 <a class="mailing-terms" href="">Условия договора</a>
               </label>
               <button class="btn-modal" type="submit">Отправить</button>
             </form>
-           
           </div>
         </div>
       </div>
@@ -466,17 +485,15 @@
         </div>
         <div class="email-input">
           <h3 class="join-title">Подпишитесь на рассылку</h3>
-          
-            <form class="input-text">
-              <label >
-                <input class="email-form" type="email" placeholder="E-mail">
-              </label>
 
-              <button class="btn-email" type="submit">Подписаться</button>
+          <form class="input-text">
+            <label>
+              <input class="email-form" type="email" placeholder="E-mail" />
+            </label>
 
-            </form>
-          
-
+            <button class="btn-email" type="submit">Подписаться</button>
+            
+          </form>
         </div>
       </div>
     </footer>
