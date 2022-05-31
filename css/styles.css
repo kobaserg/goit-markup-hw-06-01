@@ -1022,10 +1022,12 @@ h3 {
 }
 
 .email-input {
-    margin-left: auto;
+   
     width: 570px;
     height: 86px;
-}
+    
+    margin-left: auto;
+} 
 
 .input-text-footer {
 
