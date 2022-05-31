@@ -76,48 +76,45 @@
                 <use href="./images/Sprite.svg#icon-close"></use>
               </svg>
             </button>
-            <p class="text-modal">Оставьте свои данные, мы вам перезвоним</p>            
-            
-            <form>
-              <div class="form-block" role="group">
-                <label class="input-text form-unit">
-                  Имя
+
+            <form class="form">
+              <p class="text-modal">Оставьте свои данные, мы вам перезвоним</p>
+              <div role="group">
+
+                <label class="form-unit">
+                  <span class="modal-item">Имя</span>
                   <input class="input-block" type="text" name="input-modal" />
                   <svg class="icon-modal">
-                    <use  href="./images/Sprite.svg#icon-person"></use>
+                    <use href="./images/Sprite.svg#icon-person"></use>
                   </svg>
                 </label>
 
-                <label class="input-text form-unit" for="tel">
-                  Телефон
-                  <input class="input-block" type="tel" name="input-modal" id="tel" />
+                <label class="form-unit" >
+                  <span class="modal-item">Телефон</span>
+                  <input class="input-block" type="tel" name="input-modal" />
                   <svg class="icon-modal">
-                    <use  href="./images/Sprite.svg#icon-phone"></use>
+                    <use href="./images/Sprite.svg#icon-phone"></use>
                   </svg>
                 </label>
 
-                <label class="input-text form-unit" for="email">
-                  Почта
-                  <input class="input-block" type="email" name="input-modal" id="email" />
+                <label class="form-unit">
+                  <span class="modal-item">Почта</span>
+                  <input class="input-block" type="email" name="input-modal" />
                   <svg class="icon-modal">
-                    <use  href="./images/Sprite.svg#icon-email"></use>
+                    <use href="./images/Sprite.svg#icon-email"></use>
                   </svg>
                 </label>
-                
 
-                <label class="input-text" for="comment">
-                  Комментарий
-                <textarea
-                  class="input-block comment"
-                  name="input-modal"
-                  id="comment"
-                  placeholder="Введите текст"
-                ></textarea>
+                <label class="form-unit">
+                  <span class="modal-item">Комментарий</span>
+                  <textarea
+                    class="input-block comment"
+                    name="input-modal"
+                    placeholder="Введите текст"
+                  ></textarea>
                 </label>
-                
               </div>
 
-              
               <label class="mailing">
                 <input class="checkbox-modal visually-hidden" type="checkbox" name="mailing" />
                 <span class="custom-checkbox">
@@ -501,7 +498,6 @@
             </label>
 
             <button class="btn-email" type="submit">Подписаться</button>
-
           </form>
         </div>
       </div>
