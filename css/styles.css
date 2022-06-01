@@ -33,12 +33,12 @@ body {
     clip-path: inset(50%);
     margin: -1px;
 }
-/* сброс всех margin c тегов Р*/
+
 p {
     margin-top: 0;
     margin-bottom: 0;
 }
-/* сброс всех margin с тегов Н2 */
+
 h1,
 h2,
 h3 {
@@ -48,43 +48,56 @@ h3 {
 .image {
     display: block;
     max-width: 100%;
+  
     height: auto;
 }
-
-/* Логотип */
-
-.page-header {
-    border-bottom: 1px solid #ECECEC;
-    margin-left: auto;
-    margin-right: auto;
-   
+.link {
+    text-decoration: none;
+    
+}
+.list-decor {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 
 .container {
-    /* background-color: powderblue; */
-    /* outline: 2px solid tomato; */
+    
     margin-left: auto;
     margin-right: auto;
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
 }
-.link {
-    text-decoration: none;
-    
-}
+
 .section {
+
     padding-top: 94px;
     padding-bottom: 94px;
-    /* outline: 5px solid #331e9e; */
+    
 }
 
-.list-decor {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+
+
+/* Header */
+
+.header {
+    border-bottom: 1px solid #ECECEC;
+    margin-left: auto;
+    margin-right: auto;
+   
 }
+
+.header-flex {
+    display: flex;
+    align-items: center;
+}
+
+.nav-box-flex {
+   display: flex;  
+}
+
 .logoweb {
     color:#2196F3 ;
     font-family:'Raleway';  
@@ -106,17 +119,6 @@ h3 {
     line-height: 1.2;
     }
 
-
-
-/* Стилизация NAV */
-.nav-box-flex {
-   display: flex;  
-}
-.header-flex {
-    display: flex;
-    align-items: center;
-}
-
 .site-nav-flex {
     display: flex;
     margin-left: 93px; 
@@ -136,9 +138,6 @@ h3 {
 .site-nav-item:last-child {
     margin-right: 0;
 }
-
-
-
 
 .site-nav .link {
     position: relative;
